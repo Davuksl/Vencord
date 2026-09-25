@@ -1,3 +1,9 @@
+/*
+ * Vencord, a Discord client mod
+ * Copyright (c) 2026 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 import definePlugin from "@utils/types";
 import { findByPropsLazy } from "@webpack";
 
@@ -35,8 +41,8 @@ function applyResolution(res: { width: number; height: number; frameRate: number
 }
 
 export default definePlugin({
-    name: "RandomStreamResSwitcher",
-    description: "Каждые 5 секунд меняет разрешение демонстрации экрана на случайное, затем возвращает исходное.",
+    name: "Fix Screen Share Resolution",
+    description: "Fixes the resolution of screen sharing in Discord.",
     authors: [{ name: "Anonymous", id: 0n }],
 
     start() {
